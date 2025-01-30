@@ -40,12 +40,12 @@
 
 using namespace std;
 
-bool checkBalance(string str, int size){
+bool checkBalance(string str){
     
     stack<char> st;
     bool ans=true;
 
-    for(int i=0;i<size-1; i++){
+    for(int i=0;i<str.size(); i++){
         if(str[i]=='(' || str[i]=='[' || str[i]=='{'){
         st.push(str[i]);
         }
@@ -82,7 +82,7 @@ bool checkBalance(string str, int size){
 int main(){
     string str = "{[(]}";
 
-    cout<<checkBalance(str, 6);
+    cout<<checkBalance(str);
 
     return 0;
 
