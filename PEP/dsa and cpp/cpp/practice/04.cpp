@@ -51,12 +51,12 @@ void printList(ListNode* head) {
 
 int main() {
     ListNode* list1 = new ListNode(1);
-    list1->next = new ListNode(3);
-    list1->next->next = new ListNode(5);
+    list1->next = new ListNode(2);
+    list1->next->next = new ListNode(4);
 
-    ListNode* list2 = new ListNode(2);
-    list2->next = new ListNode(4);
-    list2->next->next = new ListNode(6);
+    ListNode* list2 = new ListNode(1);
+    list2->next = new ListNode(3);
+    list2->next->next = new ListNode(4);
 
     Solution s;
     ListNode* mergedList = s.mergeTwoLists(list1, list2);
